@@ -1,0 +1,37 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "solid",
+    "window.zoomLevel": 2,
+    "explorer.confirmDragAndDrop": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 1500,
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Cobalt2",
+    "editor.tabSize": 2,
+    "rust-client.channel": "stable",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.showTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "window.fullScreenZenMode": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    },
+    "yaml.schemas": {
+        "file:///Users/johannes/.vscode/extensions/atlassian.atlascode-1.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "files.associations": {
+        "*.ejs": "html"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    // Trying out in 1.41
+    "terminal.integrated.minimumContrastRatio": 4.5,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "typescript.updateImportsOnFileMove.enabled": "never"
+}   
