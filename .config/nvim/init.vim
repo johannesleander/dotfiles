@@ -1,8 +1,2 @@
-nnoremap l i
-nnoremap k h
-nnoremap n j
-nnoremap e k
-nnoremap i l
-
+" Easier commands
 nnoremap ; :
-nnoremap Q @q
