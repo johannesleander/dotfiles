@@ -1,2 +1,0 @@
-" Easier commands
-nnoremap ; :
