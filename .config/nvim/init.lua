@@ -859,6 +859,12 @@ require("lazy").setup({
 
 		init = function() -- Load the colorscheme here.
 			-- Set Penumbra with contrast=plus
+			vim.api.nvim_create_autocmd("ColorScheme", {
+				pattern = "penumbra",
+				callback = function()
+					vim.api.nvim_set_hl(0, "Comment", { fg = "#ffffff", italic = true })
+				end,
+			})
 			require("penumbra").setup({
 				contrast = "plusplus",
 				transparent_bg = true,
