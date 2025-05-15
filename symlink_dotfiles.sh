@@ -8,7 +8,7 @@ declare -A DOTFILES=(
     [".zshrc"]="$HOME/.zshrc"
     [".config/nvim/init.lua"]="$HOME/.config/nvim/init.lua"
     [".tmux.conf"]="$HOME/.tmux.conf"
-    ["alacritty.toml"]="$HOME/alacritty.toml"
+    [".config/alacritty/alacritty.toml"]="$HOME/.config/alacritty/alacritty.toml"
 )
 
 # Function to create symlinks
