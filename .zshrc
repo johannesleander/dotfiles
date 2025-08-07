@@ -114,3 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Created by `pipx` on 2025-06-13 18:53:26
+export PATH="$PATH:/home/leand/.local/bin"
+eval "$(direnv hook zsh)"
