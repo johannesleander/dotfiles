@@ -118,3 +118,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Created by `pipx` on 2025-06-13 18:53:26
 export PATH="$PATH:/home/leand/.local/bin"
 eval "$(direnv hook zsh)"
+export NVS_HOME="$HOME/.nvs"
+[ -s "/opt/homebrew/Caskroom/nvs/1.7.1/nvs-1.7.1/nvs.sh" ] && . "/opt/homebrew/Caskroom/nvs/1.7.1/nvs-1.7.1/nvs.sh"
