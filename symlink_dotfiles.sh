@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 # Directory where your dotfiles are stored (adjust as necessary)
 DOTFILES_DIR="$HOME/projects/dotfiles"
@@ -18,22 +18,25 @@ create_symlink() {
 
     if [[ -e $dest || -L $dest ]]; then
         echo "Removing existing symlink or file at $dest"
-        rm -rf $dest
+        rm -rf "$dest"
     fi
 
     echo "Creating symlink: $source -> $dest"
-    ln -s $source $dest
+    ln -s "$source" "$dest"
 }
 
 # Create symlinks for each dotfile
 for file in "${!DOTFILES[@]}"; do
     source_file="$DOTFILES_DIR/$file"
     dest_file="${DOTFILES[$file]}"
-    
+
     if [[ ! -e $source_file ]]; then
         echo "Source file $source_file does not exist. Skipping..."
         continue
     fi
+
+    # Ensure the destination directory exists
+    mkdir -p "$(dirname "$dest_file")"
 
     create_symlink "$source_file" "$dest_file"
 done
