@@ -20,3 +20,5 @@ bindings = [
   { key = "Right", mods = "Command", chars = "\u0005" }, # Ctrl-E
 ]
 
+[env]
+TERM = "xterm-256color"
