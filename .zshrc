@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
 
 # bun completions
 [ -s "/home/leand/.bun/_bun" ] && source "/home/leand/.bun/_bun"
@@ -121,3 +122,20 @@ eval "$(direnv hook zsh)"
 export NVS_HOME="$HOME/.nvs"
 [ -s "/opt/homebrew/Caskroom/nvs/1.7.1/nvs-1.7.1/nvs.sh" ] && . "/opt/homebrew/Caskroom/nvs/1.7.1/nvs-1.7.1/nvs.sh"
 export PATH="$PATH:$(brew --prefix libpq)/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/.puro/bin"
+export AIRA_PROJECTS_PATH="$HOME/aira"
+
+# Tool aliases
+alias cleanclip="pbpaste | tr -s '\n' '\n' | pbcopy"
+
+# Aira aliases
+alias aws_postgres_connect="$AIRA_PROJECTS_PATH/infra/devtools/aws_postgres_connect"
+
+# pnpm
+export PNPM_HOME="/Users/johannes.leander/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
