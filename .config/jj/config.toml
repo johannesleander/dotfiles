@@ -1,0 +1,9 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "Johannes Leander"
+email = "johannes.leander@airahome.com"
+
+[ui]
+paginate = "never"
+editor = "nvim"
