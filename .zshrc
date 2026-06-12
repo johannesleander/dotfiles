@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
+# ZSH_THEME="gnzh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -80,6 +81,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export DEFAULT_USER=$USER
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -135,7 +137,13 @@ alias aws_postgres_connect="$AIRA_PROJECTS_PATH/infra/devtools/aws_postgres_conn
 # pnpm
 export PNPM_HOME="/Users/johannes.leander/Library/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
+
+# Added by sonarqube-cli installer
+export PATH="$HOME/.local/share/sonarqube-cli/bin:$PATH"
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
+
