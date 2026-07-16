@@ -128,6 +128,8 @@ export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:$HOME/.puro/bin"
 export AIRA_PROJECTS_PATH="$HOME/aira"
 
+export MY_USER_ID="c0213d82-cdb5-4e8e-be3a-cba8af64850e"
+
 # Tool aliases
 alias cleanclip="pbpaste | tr -s '\n' '\n' | pbcopy"
 
@@ -147,3 +149,5 @@ esac
 export PATH="$HOME/.local/share/sonarqube-cli/bin:$PATH"
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
