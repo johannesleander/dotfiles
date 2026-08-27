@@ -151,3 +151,4 @@ export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export PATH="$HOME/.cargo/bin:$PATH"
